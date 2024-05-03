@@ -71,6 +71,9 @@ services:
       - .env
       - .env.prod
     ports:
+      #VERY VERY IMPORTANT: if you forget 127.0.0.1, Docker
+      #will introduce rules in iptables to open the exposed port
+      #to the world --> DANGER. 
       - 127.0.0.1:${PRODUCTION_FORWARDED_PORT}:5432
     volumes: 
       - postgis-data-prod:/var/lib/postgresql/data
