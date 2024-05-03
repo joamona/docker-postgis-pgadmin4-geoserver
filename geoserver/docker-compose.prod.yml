@@ -1,0 +1,20 @@
+version: '3'
+services:
+  geoserver:
+    image: docker.osgeo.org/geoserver:2.24.2
+    restart: unless-stopped
+    ports:
+      - ${PRODUCTION_FORWARDED_PORT}:8080
+    env_file:
+        - .env
+        - .env.prod
+    volumes:
+      - ./geoserver_data_prod:/opt/geoserver_data/:Z
+      - ./additional_libs_prod:/opt/additional_libs:Z # by mounting this we can install libs from host on startup
+    networks:
+      - postgis_postgis
+
+networks:
+   postgis_postgis:
+      driver: bridge
+      external: true
