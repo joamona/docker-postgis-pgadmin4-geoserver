@@ -80,7 +80,7 @@ services:
     networks:
       - postgis
 volumes:
-  postgis-data:
+  postgis-data-prod:
     driver: local
 
 networks:
