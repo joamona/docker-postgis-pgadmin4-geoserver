@@ -2,7 +2,9 @@
 #version: "3.9"
 
 #To get into a database
-#   psql -U postgres -d Postgres -h localhost -p 5432
+#   install psql:
+#   sudo apt-get install -y postgresql-client
+#   psql -U postgres -d exampledatabase -h localhost -p 5432
 
 #create the user vagrant and set the password vagrant
 #   create role vagrant superuser createdb createrole login replication bypassrls;
