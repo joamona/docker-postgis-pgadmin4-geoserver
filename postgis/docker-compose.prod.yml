@@ -71,7 +71,7 @@ services:
       - .env
       - .env.prod
     ports:
-      - ${PRODUCTION_FORWARDED_PORT}:5432
+      - 127.0.0.1:${PRODUCTION_FORWARDED_PORT}:5432
     volumes: 
       - postgis-data-prod:/var/lib/postgresql/data
     healthcheck:
