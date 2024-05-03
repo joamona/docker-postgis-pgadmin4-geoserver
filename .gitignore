@@ -4,11 +4,10 @@ pgadmin4/pgadmin4
 pgadmin4/pgadmin4/data
 pgadmin4/pgadmin4/servers
 
-pgadmin4/pgadmin4
+pgadmin4/pgadmin4_prod
 pgadmin4/pgadmin4_prod/data
 pgadmin4/pgadmin4_prod/servers
 geoserver/.env.prod
 pgadmin4/.env.prod
 postgis/.env.prod
-
 
