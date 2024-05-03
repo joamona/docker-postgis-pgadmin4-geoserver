@@ -13,7 +13,6 @@ version: '3.9'
 
 services:
    pgadmin4:
-      container_name: pgadmin4
       image: dpage/pgadmin4:8.3
       env_file:
 #por un bug de docker-compose, no lee correctamente .env.dev
