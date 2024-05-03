@@ -1,4 +1,3 @@
-version: '3'
 services:
   geoserver:
     image: docker.osgeo.org/geoserver:2.24.2

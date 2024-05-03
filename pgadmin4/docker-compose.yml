@@ -1,4 +1,3 @@
-version: '3.9'
 
 #This service depends on the postgis_postgis docker network
 #Start the posrgis container first
