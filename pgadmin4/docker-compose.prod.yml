@@ -1,7 +1,9 @@
 #This service depends on the postgis_postgis docker network
 #Start the posrgis container first
 
-#1. Create the folders data and servers
+#1. Create the folders data and servers. 
+#   the script ./sudo_create_folders.sh will do the following
+#   steps for you
 #2. Create the file servers/servers.json, empty
 #3. Change the owner for the folder data
 #     sudo chown -R 5050:5050 data
